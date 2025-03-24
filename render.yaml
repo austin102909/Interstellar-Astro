@@ -1,1 +1,7 @@
-render.yaml
+services:
+  - name: interstellar-astro-proxy
+    type: web
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    autoDeploy: true
